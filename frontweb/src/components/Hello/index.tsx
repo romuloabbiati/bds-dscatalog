@@ -1,7 +1,7 @@
 function Hello() {
 
     return (
-        <h1>Ola mundo</h1>
+        <h1>Hello DSCatalog</h1>
     );
 }
 
