@@ -1,15 +1,11 @@
-import Navbar from './components/Navbar';
-import Hello from 'components/Hello';
+import Home from 'pages/Home';
 import './assets/styles/custom.scss';
 import './App.css';
-// import './assets/styles/styles.css';
 
 function App() {
-
   return (
     <>
-      <Navbar />
-      <Hello />
+      <Home />
     </>
   );
 }
