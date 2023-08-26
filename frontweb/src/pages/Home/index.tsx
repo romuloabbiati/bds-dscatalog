@@ -15,9 +15,11 @@ const Home = () => {
               We will help you to find the best products available in the market
             </p>
           </div>
-          <Link to='/products'>
-            <ButtonIcon />
-          </Link>
+          <div>
+            <Link to="/products">
+              <ButtonIcon />
+            </Link>
+          </div>
         </div>
         <div className="home-image-container">
           <MainImage />
