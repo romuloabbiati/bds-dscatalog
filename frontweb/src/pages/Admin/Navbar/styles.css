@@ -1,0 +1,35 @@
+ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.admin-nav-container {
+    padding: 10px;
+    background-color: #FFF;
+}
+
+.admin-nav-item {
+    background-color: #F2F2F2;
+    border-radius: 100px;
+    color: #9E9E9E;
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    padding: 0px 10px;
+    letter-spacing: -0.015em;
+}
+
+.admin-nav-item.active {
+    background-color: rgba(64, 123, 255, 0.3);
+    color: #407BFF;
+}
+
+.admin-nav-item p {
+    margin-bottom: 0px;
+}
