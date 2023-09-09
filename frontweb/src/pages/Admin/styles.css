@@ -11,4 +11,8 @@
     .admin-container {
         flex-direction: row;
     }
+
+    .admin-content {
+        flex: 1;
+    }
 }
