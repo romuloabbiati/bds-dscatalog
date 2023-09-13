@@ -1,20 +1,29 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 import Home from 'pages/Home';
 import Navbar from 'components/Navbar';
 import Catalog from 'pages/Catalog';
 import Admin from 'pages/Admin';
 import ProductDetails from 'components/ProductDetails';
 
-const Paths = () => (
+const Routes = () => (
   <BrowserRouter>
     <Navbar />
-    <Routes>
-      <Route path='/' element={<Home />} />
-      <Route path='/products' element={<Catalog />} />
-      <Route path='/admin' element={<Admin />} />
-      <Route path='products/:productId' element={<ProductDetails />} />
-    </Routes>
+    <Switch>
+      <Route path="/" exact>
+        <Home />
+      </Route>
+      <Route path="/products" exact>
+        <Catalog />
+      </Route>
+      <Route path="/products/:productId">
+        <ProductDetails />
+      </Route>
+      <Redirect from="/admin" to="/admin/products" exact />
+      <Route path="/admin">
+        <Admin />
+      </Route>
+    </Switch>
   </BrowserRouter>
 );
 
-export default Paths;
+export default Routes;

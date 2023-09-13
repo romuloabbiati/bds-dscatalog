@@ -1,12 +1,12 @@
 import './assets/styles/custom.scss';
 import './App.css';
 
-import Paths from 'Routes';
+import Routes from 'Routes';
 
 function App() {
   return (
     <>
-      <Paths />
+      <Routes />
     </>
   );
 }
