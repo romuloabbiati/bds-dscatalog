@@ -3,7 +3,7 @@ import Home from 'pages/Home';
 import Navbar from 'components/Navbar';
 import Catalog from 'pages/Catalog';
 import Admin from 'pages/Admin';
-import ProductDetails from 'components/ProductDetails';
+import ProductDetails from 'pages/ProductDetails';
 
 const Routes = () => (
   <BrowserRouter>
